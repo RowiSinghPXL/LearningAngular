@@ -1,0 +1,26 @@
+<div class="card" style="width: 18rem;">
+    
+    <div class="card-body">
+      <h5 class="card-title">Customers</h5>
+      <p>Will tell more about the customers</p>
+      
+    </div>
+
+
+    <div class="table-responsive">
+        <table class="table" *ngIf='names.length'>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>        
+            <tbody>
+                <tr *ngFor="let name of names">
+                    
+                    <td>{{name}}</td>
+                    
+                </tr>        
+            </tbody>
+        </table>
+    </div>
+</div>
